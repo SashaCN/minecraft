@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+html{
+  font-size: 1px;
+}
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14rem;
+  background-color: #000;
+}
+.flex-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-line,
+.footer-line{
+  margin: 0 auto;
+  padding: 15px 5%;
+  background-color: #1c1c1c;
+}
+.logo{
+  width: 15%;
+}
+.logo img{
+  width: 100%;
+}
+nav,
+.footer-menu{
+  width: 50%;
+}
+nav a,
+.footer-line a{
+  font-size: 16rem;
+  color: #fff;
+  text-transform: uppercase;
+  transition: .3s;
+}
+nav a:hover,
+.footer-line a:hover{
+  text-decoration: underline;
+  color: #3b8526;
+}
+.header-content{
+  display: flex;
+  align-items: center;
+  width: 90%; 
+  margin: 0 auto;
+  background: #0171b4 url('../img/header_bg.webp') center no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+}
+.title-block{
+  color: #fff;
+  width: 30%;
+  margin: 0 10%;
+}
+h1{
+  font-size: 42rem;
+  line-height: 42rem;
+  margin-bottom: 20px;  
+}
+h1+p{
+  font-size: 18rem;
+  margin-bottom: 20px;
+}
+.title-block a{
+  display: inline-block;
+  width: 60%;
+  padding: 15px;
+  background-color: #3b8526;
+  font-size: 18rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-top: 4px solid #6bc349;
+  border-bottom: 4px solid #2a631c;
+  transition: .3s;
+}
+.title-block a:hover{
+  background-color: #333;
+  border-color: #333;
+}
+
+.main{
+  padding: 50px 0;
+  background-color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+h2{
+  font-size: 28rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.adventures{
+  width: 80%;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+.adventures>a{
+  width: 30%;
+}
+.adventures>a:hover h3{
+  color: #1c1c1c;
+  text-decoration: underline;
+}
+.adventure img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.adventure{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+h3{
+  font-size: 18rem;
+  margin: 15px 0 5px;
+  color: #3b8526;
+  transition: .3s;
+}
+h3+p{
+  color: #000;
+}
+.footer-line{
+  padding: 15px 10%;
+}
+.footer-line .logo{
+  width: 10%;
+}
+
+@media screen and (max-width: 1660px) {
+  .title-block{
+    width: 40%;
+  }
+  h1{
+    font-size: 30rem;
+    margin-bottom: 10px;
+  }
+  h1+p{
+    margin-bottom: 15px;
+  }
+  .adventure img{
+    height: 400px;
+  }
+  .footer-menu{
+    width: 70%;
+  }
+}
